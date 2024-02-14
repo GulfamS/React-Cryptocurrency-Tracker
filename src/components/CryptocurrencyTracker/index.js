@@ -19,10 +19,10 @@ class CryptocurrencyTracker extends Component {
     this.setState({
       cryptocurrancyData: data.map(eachCurrency => ({
         id: eachCurrency.id,
-        currencyIcon: data.currency_icon,
-        currencyName: data.currency_name,
-        usdValue: data.usd_value,
-        euroValue: data.euro_value,
+        currencyLogo: eachCurrency.currency_logo,
+        currencyName: eachCurrency.currency_name,
+        usdValue: eachCurrency.usd_value,
+        euroValue: eachCurrency.euro_value,
       })),
       isLoading: false,
     })
